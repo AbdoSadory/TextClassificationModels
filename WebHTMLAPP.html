@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Movies Review" charset="UTF-8"/>
+		<title>Movies' Review</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<style>
+			body{
+				background-color:#A1A6B4;
+			}
+			.container-xl{
+				background-color:#94C5CC;
+				border-style:double;
+				border-width:5px;
+				border-color: black;
+				padding:20px;
+				margin-top:180px;
+			}
+			.container-sm{
+				color:white;
+				background-color:#A1A6B4;
+				border-color:black;
+				border-radius:50px;
+				text-align:center;
+				width:auto;
+				height:auto;
+				margin:20px;
+				margin-bottom:50px;
+			}
+			.form-group{
+				align:center;
+				margin:10px;
+			}
+			.p{
+				color:black;
+				font-size:30px;
+				margin-right:40px;
+				font-weight:bold;
+			}
+			.custom-select{
+				height:auto;
+				width : auto;
+				font-size:20px;
+				color:black;
+				font-weight:bold;
+				background-color:white;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="general" class="container-xl">
+			<div class="container-sm ">
+				<h1 id="Headline Address">Movies' Review Model</h1>
+			</div>
+			<div class="container-md">
+				<div class="form-group">
+					<label for="exampleFormControlSelect1"><p class="p">Choose Your Machine Learning Model</p></label>
+					<select class="custom-select custom-select-sm mb-3 badge-danger " onchange="location=this.value">
+						<option value="">Model Type</option>
+						<option value="Logistic Regression.html">Logistic Regression</option>
+						<option value="Linear Regression.html">Linear Regression</option>
+						<option value="KNN.html">KNN (K-Nearest Neighbors)</option>
+						<option value="NB.html">Naive Bayes</option>
+						<option value="SVM.html">SVM (Support Vector Machine)(Linear)</option>
+						<option value="SVMp.html">SVMP(Support Vector Machine)(Polynomial)</option>
+						<option value="SVMr.html">SVMR (Support Vector Machine)(rbf)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

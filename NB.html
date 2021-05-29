@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Movies Review" charset="UTF-8"/>
+		<title>Movies' Review By Naive Bayes Model</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<style>
+			body{
+				background-color:#A1A6B4;
+			}
+			.container-xl{
+				background-color:#94C5CC;
+				border-style:double;
+				border-width:5px;
+				border-color: black;
+				padding:10px;
+				margin-top:25px;
+			}
+			.container-sm{
+				color:white;
+				background-color:#A1A6B4;
+				border-color:black;
+				border-radius:50px;
+				text-align:center;
+				width:auto;
+				height:auto;
+				margin:20px;
+				margin-bottom:20px;
+			}
+			.NBButtons{
+				margin: auto;
+				width: 50%;
+
+			}
+			.NBModelFittingdiv,.NBEvaluatediv,.NBpredictdiv,.NBpredicttext{
+				border-style: solid;
+				border-color: white;
+				border-width:5px;
+				border-radius:50px;
+				text-align: center;
+				padding: 10px;
+			}
+			.NBModelFitting,.NBEvaluate,.NBpredict{
+				font-weight:bold;
+				width: 40%;
+			}
+			.NBModelFittingspan,.NBEvaluatespan,.NBpredictspan{
+				font-weight: bold;
+			}
+			.NBtextarea{
+				width: 80%;
+				resize: none;
+			}
+			.GoHome{
+				text-align: center;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="general" class="container-xl">
+			<div class="container-sm ">
+				<h1 id="NBModel_Headline">Naive Bayes Model</h1>
+			</div>
+			<div class="NBButtons">
+				<div class="NBModelFittingdiv"> 
+					<a href="/NBModelFitting" class="NBModelFitting btn btn-lg btn-warning" onclick="">Model Fitting</a>
+					<span class="NBModelFittingspan btn btn-lg btn-warning">Done!</span>
+				</div>
+
+				<br>
+
+				<div class="NBEvaluatediv">
+					<a href="/NBEvaluate" class="NBEvaluate btn btn-lg btn-light" onclick="">Evaluate</a>
+					<span class="NBEvaluatespan btn btn-lg btn-light">Done!</span>
+				</div>
+
+				<br>
+				<div class="NBpredicttext">
+					<textarea class="NBtextarea btn btn-lg btn-dark"></textarea>
+				</div>
+				<br>
+				<div class="NBpredictdiv">
+					<a href="/NBpredict" class="NBpredict btn btn-lg btn-dark" onclick="">Predict</a>
+					<span class="NBpredictspan btn btn-lg btn-dark">Done!</span>
+				</div>
+				<div class="GoHome">
+					<a href="WebHTMLAPP.html" class="NBpredict btn btn-lg btn-dark" onclick="">GO HOME !</a>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
